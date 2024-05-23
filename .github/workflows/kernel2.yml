@@ -94,6 +94,7 @@ jobs:
           # tree ${{ env.KERNEL_NAME }}
           git clone --recursive --depth=1 -j $(nproc) --branch ${{ env.VENDOR_BRANCH }} ${{ env.VENDOR_REPO }} vendor 
           echo "ddddd link"
+          ls -l
           ls -l OPPO_A57_5G/kernel/sched_assist
       - name: 💫 Get toolchains
         env:
