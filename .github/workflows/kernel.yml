@@ -55,6 +55,10 @@ jobs:
       KERNEL_DEVICE: ${{ matrix.CONFIG.kernelSource.device }}
       KERNEL_DEFCONFIG_PATH: ${{ matrix.CONFIG.kernelSource.defconfig }}
 
+      # Vendor source 
+      VENDOR_REPO: ${{ matrix.CONFIG.vendorSource.repo }}
+      VENDOR_BRANCH: ${{ matrix.CONFIG.vendorSource.branch }}
+      
       # Whether to use ccache to speed up compilation
       ENABLE_CCACHE: ${{ matrix.CONFIG.enableCcache }}
 
@@ -130,7 +134,7 @@ jobs:
         run: |
           git clone --recursive --depth=1 -j $(nproc) --branch ${{ env.KERNEL_BRANCH }} ${{ env.KERNEL_REPO }} ${{ env.KERNEL_NAME }}
           # tree ${{ env.KERNEL_NAME }}
-
+          git clone --recursive --depth=1 -j $(nproc) --branch ${{ env.VENDOR_BRANCH }} ${{ env.VENDOR_REPO }} vendor 
       - name: 💫 Get toolchains
         env:
           toolchains: "${{ toJSON(matrix.CONFIG.toolchains) }}"
