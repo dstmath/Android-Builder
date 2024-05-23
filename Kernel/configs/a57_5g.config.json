@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "OPPO_A57_5G",
-      "repo": "https://github.com/dstmath/oppo_a57_kernel_source",
-      "branch": "main",
+      "repo": "https://github.com/dstmath/android_kernel_oppo_mt6833",
+      "branch": "oppo/mt6833_u_14.0.0_a97_a57_5g",
       "device": "k6833v1_64_k419",
       "defconfig": "k6833v1_64_k419_defconfig"
     },
