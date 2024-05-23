@@ -7,7 +7,6 @@
       "device": "k6833v1_64_k419",
       "defconfig": "k6833v1_64_k419_defconfig"
     },
-    {
     "vendorSource": {
       "name": "OPPO_A57_5G",
       "repo": "https://github.com:dstmath/android_kernel_modules_oppo_mt6833",
