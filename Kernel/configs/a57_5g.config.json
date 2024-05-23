@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "Xiaomi4",
+      "name": "OPPO A57 5G",
       "repo": "https://github.com/dstmath/android_kernel_oppo_mt6833",
       "branch": "oppo/mt6833_u_14.0.0_a97_a57_5g",
       "device": "k6833v1_64_k419",
